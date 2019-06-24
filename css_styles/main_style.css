@@ -390,6 +390,7 @@
     border-radius: 30px 30px 30px 30px;
     padding: 10px 60px 10px 30px;
     color: white;
+    outline: none;
 }
 
 .submit_location {
@@ -401,6 +402,7 @@
     border-radius: 25%;
     margin-left: -60px;
     color: white;
+    outline: none;
 }
 
 .planner {
@@ -440,4 +442,5 @@
     padding: 10px 60px 10px 30px;
     border: none;
     color: white;
+    outline: none;
 }
