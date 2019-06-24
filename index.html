@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Explorer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./css_styles/main_style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script type="text/javascript" src="./js_scripts/main_script.js"></script>
+    <link rel="icon" href="./icons/icon.png">
+</head>
+<body>
+    <video autoplay loop muted id="video" oncontextmenu="return false;">
+        <source src="./web_vid/intro.mp4">
+    </video>
+    <div id="main_frame">
+        <div align="center" class="header_frame" id="header_frame">
+            <span id="side_nav" style="float: left; color: white;font-size:30px; margin-top: 30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+            <a href="index.html" class="header">Explorer</a>
+            <div class="header_menu" id="header_menu">
+                <div class="dropdown3">
+                    <button class="drop_button_3" onclick='window.location.href = "https://www.expedia.com/Vacation-Packages"'>Deals</button>
+                </div>
+                <div class="dropdown1">
+                    <button class="drop_button_1" onclick="google_search('tourism world')">Explore </button>
+                </div>
+                <div class="dropdown2">
+                    <button onclick="login_function()" class="drop_button_2">Login</button>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="intro_page">
+            <span class="Intro_">Introducing Explorer</span><br><br><br>
+            <span class="Intro_2">Explore the ways of travelling around the world !</span><br><br><br>
+        </div><br><br><br>
+        <div align="center" class="head_frame_0">
+            <span>Search with Explorer: </span>
+            <input name="search" placeholder="Search Places" id="search_places" class="search_places">
+            <button class="submit_location">></button><br><br><br><br><br><br>
+            <span>Planning Alone for a Trip ?</span><br><br>
+            <button class="planner" onclick="window.location.href = 'plan.html'" >Plan with Explorer</button>
+            <button class="planner" onclick='window.location.href = "signup.html"'>Sign up</button>
+        </div>
+        <div align="center" class="head_frame_1" onclick="window.location.href = 'travel_stories.html'">Travel Stories >></div>
+        <span align="center" class="in_frame_1">
+            <button class="blocks_in_frame_1" onclick="google_search('....know before you visit Seoul')">
+                <img src="./places/seoul.jpg" " alt="review">
+                <a href="https://www.google.com">.....know before you visit Seoul</a>
+            </button>
+            <button class="blocks_in_frame_1" onclick="google_search('visit switzerland, but....')">
+                <img src="./places/switzerland.jpg" alt="review">
+                <a href="https://www.google.com">visit switzerland, but.....</a>
+            </button>
+            <button class="blocks_in_frame_1" onclick="google_search('..... cultures of india')">
+                <img src="./places/india.jpg" alt="review">
+                <a href="https://www.google.com">..... cultures of india</a>
+            </button>
+            <button class="blocks_in_frame_1" onclick="google_search('Never ending desert trip..')">
+                <img src="./places/Desert.jpg" alt="review">
+                <a href="https://www.google.com">Never ending desert trip..</a>
+            </button>
+            <button class="blocks_in_frame_1" onclick="google_search('Treking bag pack...')">
+                <img src="./places/Russia.jpg" alt="review">
+                <a href="https://www.google.com">Treking bag pack...</a>
+            </button>
+            <button class="blocks_in_frame_1" onclick="google_search('A planet inside planet...')">
+                <img src="./places/Treking.jpg" alt="review">
+                <a href="https://www.google.com">A planet inside planet...</a>
+            </button>
+            <button class="blocks_in_frame_1" onclick="google_search('Shenzhen the electronic World')">
+                <img src="./places/shenzhen.jpg" alt="review">
+                <a href="https://www.google.com">Shenzhen the electronic World</a>
+            </button>
+            <button class="blocks_in_frame_1" onclick="google_search('visit best skyline in 2019')">
+                <img src="./places/skyline.jpg" alt="review">
+                <a href="https://www.google.com">visit best skyline in 2019</a>
+            </button>
+        </span>
+        <div align="center" class="head_frame_1">Customer Review</div>
+        <span align="center" class="in_frame">
+            <button class="blocks_in_frame" disabled>
+                <img src="./review/person1.png" alt="review">
+                <p>Explorer Helped me<br>
+                with proper planning<br>
+                for my trip. Their <br>
+                service is the <br>
+                best when travelling<br>
+                abroad - xyz</p>
+                <a href="stories.html">read full story</a>
+            </button>
+            <button class="blocks_in_frame" disabled>
+                <img src="./review/person2.png" alt="review">
+                <p>Explorer has unique<br>
+                deals. It made my trip <br>
+                to xyz place awesome<br>
+                within my budget<br>
+                great management and<br>
+                services - xyz</p>
+                <a href="stories.html">read full story</a>
+            </button>
+            <button class="blocks_in_frame" disabled>
+                <img src="./review/person3.png" alt="review">
+                <p>Was going to this<br>
+                xyz place and I had no<br>
+                planning. Explorer<br>
+                with their services<br>
+                made my journey <br>
+                memorable - xyz</p>
+                <a href="stories.html">read full story</a>
+            </button>
+        </span>
+        <div align="center" class="head_frame_last"><br><br>
+            <span>Subscribe</span>
+            <input name="search" placeholder="Email" id="subscribe" class="subscribe">
+            <button class="submit_location">></button>
+            <br><br>     
+        </div>
+        <div class="footer">
+            <a href="index.html" class="header_footer" disabled>Explorer</a><br>
+            <span style="color: white; font-family: segoe ui">explorer@any.com</span><br><br>
+            <a id="links_" href='https://www.facebook.com'><img src="./icons/facebook.png" id="facebook"></a><span>..</span>
+            <a id="links_" href='https://www.twitter.com'><img src="./icons/twitter.png" id="twitter"></a><span>..</span>
+            <a id="links_" href='https://www.instagram.com'><img src="./icons/instagram.png" id="instagram"></a><span>..</span>
+            <a id="links_" href='https://www.youtube.com'><img src="./icons/youtube.png" id="youtube"></a><span>..</span>
+            <p style="color: white; font-family: segoe ui">&copy; 2019 Explorer.com</p>
+            <a href="https://www.bbb.org/greater-san-francisco/for-businesses/toolkits1/sample-privacy-policy/">Privacy</a><span>.</span>
+            <a href="https://seqlegal.com/free-legal-documents/website-disclaimer">Disclaimers </a><span>.</span>
+            <a href="https://www.docracy.com/0zkgfkbdo9b/statement-of-work-for-web-development">Developers </a><span>.</span>
+            <a href="https://www.termsfeed.com/blog/sample-cookies-policy-template/">Cookie statement </a><span>.</span>
+            <br><br><br>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br><br><br>
+        <a id="sidenav1a" href="share.html">Share your story</a>
+        <a id="sidenav1a" href="plan.html">Plan a Trip</a>
+        <a id="sidenav3a" href="Aboutus.html">About Us</a>
+        <a id="sidenav4a" style="cursor: pointer;" onclick="login_function2()">Login</a><br><br><br><br><br>
+        <div align="center" class="lowend">
+            <a id="links_" href='https://www.facebook.com'><img src="./icons/facebook.png" id="facebook"></a>
+            <a id="links_" href='https://www.twitter.com'><img src="./icons/twitter.png" id="twitter"></a>
+            <a id="links_" href='https://www.instagram.com'><img src="./icons/instagram.png" id="instagram"></a>
+            <a id="links_" href='https://www.youtube.com'><img src="./icons/youtube.png" id="youtube"></a>
+        </div><br><br>
+        <span class="lowend_footer">explorer@any.com</span>
+    </div>
+    <div id="login_page" class="login_page" hidden>
+        <div align="center">
+            <a href="javascript:void(0)" class="closelogin" onclick="closelogin()">&times;</a><br><br><br>
+            <a class="login_title">Account Login</a><br><br><br>
+            <input class="login_value" id="login_email" placeholder="Username" type="text"/><br><br><br>
+            <input class="login_value" id="login_password" placeholder="Password" type="password" /><br><br><br>
+            <button class="login_button" id="login_button">Login</button><br><br>
+            <a style="font-family: segoe ui; font-size: 12px; color:white; text-decoration: unset;" href="#">forgot password ?</a><br><br><br><br><br><br>
+            <a style="font-family: segoe ui; font-size: 12px; color:white;">Not a member ?</a>
+            <a href="./signup.html" style="font-family: segoe ui; font-size: 12px; color:white;outline: none;"><u>Sign Up</u></a>
+        </div>
+    </div><br><br><br>
+</body>
+</html> 

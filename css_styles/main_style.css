@@ -1,0 +1,443 @@
+.main_frame{display: block;background-color: rgb(0,0,0,0.4); transition: 1s;}
+
+#video {
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+    filter: opacity(60%);
+}
+
+.header_frame{
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    min-height: 160px;
+    margin-left: -10px;
+    padding-left: 18px;
+    margin-top: -10px;
+    background-color: rgb(0,0,0,1);
+}
+
+.header {
+    cursor: pointer;
+    font-family: "segoe ui";
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-left: 30px;
+    float: left;
+    text-decoration: unset;
+    color: white;
+}
+
+.header_menu {
+    min-width: 500px;
+    float:right;
+    margin-top:25px;
+    padding-right: 100px;
+    margin-left: -20px;
+}
+
+.dropdown3 {position: relative;display: inline-block;}
+
+.drop_button_3 {
+    min-width: 150px;
+    transition: .5s;
+    transition-timing-function: linear;
+    background-color: rgb(255,255,255,0.1);
+    color: white;
+    padding: 12px 16px 16px 16px;
+    font-size: 16px;
+    border-left: none; border-right: none; border-bottom: none;
+    border-top-width: 5px;
+    border-top-color: transparent;
+}
+
+.dropdown3:hover .drop_button_3 {transition: .5s; border-top-width: 3px; border-top-color: red;background-color: rgb(255,255,255,0.2);}
+
+.dropdown2 {position: relative;display: inline-block;}
+
+.drop_button_2 {
+    min-width: 150px;
+    transition: .5s;
+    transition-timing-function: linear;
+    background-color: rgb(255,255,255,0.1);
+    color: white;
+    padding: 12px 16px 16px 16px;
+    font-size: 16px;
+    border-left: none; border-right: none; border-bottom: none;
+    border-top-width: 5px;
+    border-top-color: transparent;
+}
+
+.dropdown2:Hover .drop2 {display: block;}
+
+.dropdown2:hover .drop_button_2 {transition: .5s; border-top-width: 3px; border-top-color: #8C4EF0;background-color: rgb(255,255,255,0.2);}
+
+.dropdown1 {position: relative;display: inline-block;}
+
+.drop1 {
+    min-width: 150px;
+    display: none;
+    position: absolute;
+    background-color: rgb(100,0,180,0.5);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+.drop_button_1 {
+    min-width: 150px;
+    transition: .5s;
+    transition-timing-function: linear;
+    background-color: rgb(255,255,255,0.1);
+    color: white;
+    padding: 12px 16px 16px 16px;
+    font-size: 16px;
+    border-left: none; border-right: none; border-bottom: none;
+    border-top-width: 5px;
+    border-top-color: transparent;
+}
+
+.dropdown1:Hover .drop1 {display: block;z-index: 1}
+
+.dropdown1:hover .drop_button_1 {transition: .5s; border-top-width: 3px;; border-top-color: aqua;background-color: rgb(100,0,180,0.5);}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.9);
+    filter: opacity(90%);
+    box-shadow: 0px 40px 16px 0px black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    font-family: segoe ui;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover {transition: .5s;font-size: 30px; color: #c887ff;}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .closebtn:Hover {transition: .5s;font-size: 40px;}
+
+.lowend a{display: inline-block;}
+
+.lowend {transition:.3s; width:400px;}
+
+.lowend a:Hover {transition:.3s;transform: scale(1.5);}
+
+.lowend_footer {font-size: 15px;font-family: segoe ui;margin-left: 110px;color:#DADADA;}
+
+#links_ {border: none;outline: none;background-color: transparent;}
+
+#facebook {width:22px;height:22px;border: none;outline: none;}
+
+#twitter {width:22px;height:22px;border: none;outline: none;}
+
+#instagram {width:22px;height:22px;border: none;outline: none;}
+
+#youtube {width:22px;height:22px;border: none;outline: none;}
+
+#login {cursor: pointer;transition: .5s;color: white; padding-top:30px; margin-left: 15px;}
+
+.login_page {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width:400px;
+    height: 600px;
+    background-color: rgb(0,0,0,1);
+    box-shadow: 0 0 40px black;
+}
+
+.closelogin {float: right;font-size: 36px;text-decoration: none; color: white;padding: 10px; margin-top: -15px;}
+
+.login_title {color: white; font-size: 36px;font-family: segoe ui;margin:30px;}
+
+.login_value {
+    width: 280px; 
+    height: 50px; 
+    background-color: transparent;
+    border-left: none; border-right: none; border-top: none; border-bottom-width: 1px;
+    font-family: cursive;
+    color:white;
+    font-size: 20px; 
+    padding-left: 20px;
+}
+
+.login_value:focus {transition: .5s;border-bottom-color: #8C4EF0;}
+.login_value::placeholder {font-size:16px;}
+.login_button {
+    transition: 1s;
+    font-size: 20px; 
+    font-family: segoe ui; 
+    width: 280px; 
+    background-color: rgb(0,0,0,0.1); 
+    color:white;
+    height: 50px;
+    border-width: 1px;
+}
+
+.login_button:hover {transition: 1s;border-color: #8C4EF0;}
+.login_button:focus {transition: 1s;border-color: #748CB9;}
+
+.Intro_ {
+    font-family: segoe ui;
+    color: black;
+    font-size: 100px; 
+    font-weight: 300;
+    animation-name: transparency_;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+.Intro_2 {
+    font-family: segoe ui;
+    color: black;
+    font-size: 50px; 
+    font-weight: 300;
+    animation-name: transparency_;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+
+@keyframes transparency_ {
+    0% {color: black;filter:opacity(50%)}
+    25% {color: black;filter:opacity(100%)}
+    50% {color: black;filter:opacity(100%)}
+    75% {color: black;filter:opacity(100%)}
+    100% {color: black;filter:opacity(50%)}
+}
+
+.intro_page {
+    -webkit-user-select: none;
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 400px;
+    height: 100px;
+}
+
+.intro_page::selection {background-color: transparent;}
+
+.in_frame {
+    display: inline-block;
+    margin-left: -10px;
+    padding-left: 18px;
+    left:0;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    background-color: rgb(0,0,0,0.5);
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    min-width: 100%;
+    min-height: 100px; 
+    background-color: rgb(0,0,0,0.8);
+    margin-bottom: -100px;
+    margin-left: -10px;
+    margin-right: -8px;
+}
+
+.footer div{float:left;letter-spacing: 20px;}
+
+.header_footer {
+    cursor: pointer;
+    font-family: "segoe ui";
+    font-size: 50px;
+    font-weight: 400;
+    text-decoration: unset;
+    color: rgb(255,255,255,.7);
+}
+
+.blocks_in_frame {
+    transition: 1s;
+    width: 350px;
+    height: 500px;
+    background-color: rgb(0,0,0,.5);
+    margin:20px;
+    border-color: transparent;
+}
+
+.blocks_in_frame:Hover {transition: 1s;border-color: #8C4EF0; width:370px;}
+
+.blocks_in_frame p{
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.blocks_in_frame a{
+    font-family: cursive;
+    font-size: 15px;
+    color: white;
+}
+
+.in_frame_1 {
+    display: block;
+    margin-left: -10px;
+    padding-left: 18px;
+    left:0;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    background-color: rgb(0,0,0,0.9);
+    text-align: center;
+}
+
+.blocks_in_frame_1 {
+    transition: 1s;
+    width: 400px;
+    height: 380px;
+    background-color: transparent;
+    margin:10px;
+    border-color: transparent;
+}
+
+.blocks_in_frame_1  a{
+    margin-top:-30px;
+    color: white;
+    font-family: cursive; 
+    font-size: 16px;
+}
+
+.blocks_in_frame_1  img{
+    box-shadow:0 0 10px;
+    z-index: -1;
+    left:-10; 
+    width:380px; 
+    height:320px;
+    border-radius: 10px 30px 10px 30px
+}
+
+.blocks_in_frame_1  a:Hover {color: #8C4EF0}
+
+.blocks_in_frame_1  img:Hover {box-shadow:0 0 10px white; border-radius: 10px 30px 10px 30px}
+
+.head_frame_1{
+    display: inline-block;
+    margin-left: -10px;
+    padding-left: 18px;
+    left:0;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    background-color: rgb(0,0,0,0.5);
+    text-align: center;
+    font-family: segoe ui;
+    font-weight: 300;
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+}
+
+.head_frame_0{
+    display: inline-block;
+    margin-left: -10px;
+    padding-left: 18px;
+    left:0;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    height: 600px;
+    background-color: rgb(0,0,0,0);
+    text-align: center;
+    font-family: segoe ui;
+    font-weight: 300;
+    font-size: 36px;
+    color: black;
+    cursor: default;
+}
+
+.search_places {
+    font-weight: 300;
+    font-size: 30px;
+    background-color: rgb(0,0,0,0.5);
+    box-shadow: 0 0 10px black;
+    width: 400px;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px 60px 10px 30px;
+    color: white;
+}
+
+.submit_location {
+    font-weight: 300;
+    font-size: 30px;
+    background-color: rgb(0,0,0,0.5);
+    box-shadow: 0 0 10px black;
+    border:none;
+    border-radius: 25%;
+    margin-left: -60px;
+    color: white;
+}
+
+.planner {
+    font-weight: 300;
+    font-size: 30px;
+    background-color: rgb(0,0,0,0.5);
+    box-shadow: 0 0 10px black;
+    border-width: 1px;
+    color: white;
+    padding: 10px 30px 10px 30px;
+}
+
+.head_frame_last{
+    display: inline-block;
+    margin-left: -10px;
+    padding-left: 18px;
+    left:0;
+    right:0;
+    bottom: 0;
+    min-width: 100%;
+    background-color: rgb(0,0,0,0.5);
+    text-align: center;
+    font-family: segoe ui;
+    font-weight: 300;
+    font-size: 36px;
+    color: black;
+    cursor: default;
+}
+
+.subscribe {
+    font-weight: 300;
+    font-size: 30px;
+    background-color: rgb(0,0,0,0.5);
+    box-shadow: 0 0 10px black;
+    width: 400px;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px 60px 10px 30px;
+    border: none;
+    color: white;
+}

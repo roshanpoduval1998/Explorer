@@ -1,0 +1,156 @@
+.header_frame{
+    min-width: 100%;
+    min-height: 100%;
+    min-height: 160px;
+    margin-left: -10px;
+    padding-left: 18px;
+    margin-top: -10px;
+}
+
+.header {
+    cursor: pointer;
+    font-family: "segoe ui";
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 30px;
+    float: left;
+    text-decoration: unset;
+    color: midnightblue;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,.5);
+    filter: opacity(90%);
+    box-shadow: 0px 40px 16px 0px black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.dropdown3 {position: relative;display: inline-block;float: left;}
+
+.drop_button_3 {
+    margin-top: 25px;
+    margin-left: 25px;
+    min-width: 150px;
+    transition: .5s;
+    transition-timing-function: linear;
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    padding: 12px 16px 16px 16px;
+    font-size: 16px;
+    border-left: none; border-right: none; border-bottom: none;
+    border-top-width: 5px;
+    border-top-color: transparent;
+}
+
+.dropdown3:hover .drop_button_3 {transition: .5s; border-top-width: 3px; border-top-color: red; background-color: black;}
+
+.sidenav a {
+    font-family: segoe ui;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {transition: .5s;font-size: 30px;}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .closebtn:Hover {transition: .5s;font-size: 40px;}
+
+.lowend a{display: inline-block;}
+
+.lowend {transition:.3s; width:400px;}
+
+.lowend:Hover {transition:.3s;transform: scale(1.1);}
+
+.lowend_footer {font-size: 15px;font-family: segoe ui;margin-left: 110px;color:#DADADA;}
+
+#links_ {border: none;outline: none;background-color: transparent;}
+
+#facebook {width:22px;height:22px;border: none;outline: none;}
+
+#twitter {width:22px;height:22px;border: none;outline: none;}
+
+#instagram {width:22px;height:22px;border: none;outline: none;}
+
+#youtube {width:22px;height:22px;border: none;outline: none;}
+
+.logo {width: 40px; height: 40px;}
+
+#login {cursor: pointer;transition: .5s;color: white; padding-top:30px; margin-left: 15px;}
+
+.sign_page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width:900px;
+    height: 600px;
+    background-color: rgb(0,0,0,0.9);
+    box-shadow: 0 0 40px #8C4EF0;
+}
+
+.login_page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width:400px;
+    height: 600px;
+    background-color: rgb(0,0,0,0.9);
+    box-shadow: 0 0 40px #8C4EF0;
+}
+
+.closelogin {float: right;font-size: 36px;text-decoration: none; color: white;padding: 10px; margin-top: -15px;}
+
+.login_title {color: white; font-size: 36px;font-family: segoe ui;margin:30px;}
+
+.login_value {
+    width: 280px; 
+    height: 50px; 
+    background-color: transparent;
+    border-left: none; border-right: none; border-top: none; border-bottom-width: 1px;
+    font-family: cursive;
+    color:white;
+    font-size: 20px; 
+    padding-left: 20px;
+    margin-right: 10px;
+}
+
+.login_value:focus {transition: .5s; transform: linear translate(280px 0px);border-bottom-color: #8C4EF0;}
+.login_value::placeholder {font-size:16px;}
+.login_button {
+    transition: 1s;
+    font-size: 20px; 
+    font-family: segoe ui; 
+    width: 280px; 
+    background-color: rgb(0,0,0,0.1); 
+    color:white;
+    height: 50px;
+    border-width: 1px;
+}
+
+.login_button:hover {transition: 1s;border-color: #8C4EF0;}
+.login_button:focus {transition: 1s;border-color: #748CB9;}

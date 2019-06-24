@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="./css_styles/signup_style.css">
+	<script type="text/javascript" src="./js_scripts/signup_script.js"></script>
+	<link rel="icon" href="./icons/icon.png">
+</head>
+<body id="main_frame">
+    <div align="center" class="header_frame" id="header_frame">
+        <span id="side_nav" style="float: left; font-size:30px; margin-top: 30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a href="index.html" class="header">Explorer</a>
+        <div class="dropdown3">
+            <button onclick="window.location.href='index.html';" class="drop_button_3">Home</button>
+        </div>
+    </div>
+    <div id="sign_page" class="sign_page">
+        <div align="center"><br><br><br><br>
+        	<img class="logo" src="./icons/icon.png">
+            <a class="login_title">Create an Account</a><br><br><br>
+            <input class="login_value" id="login_email" placeholder="First name" type="text"/>
+            <input class="login_value" id="login_email" placeholder="Last name" type="text"/><br><br><br>
+            <input class="login_value" id="login_email" placeholder="Email/Mobile" type="text"/>
+            <input class="login_value" id="login_password" placeholder="Password" type="password" /><br><br><br>
+            <button class="login_button" id="login_button">Sign Up</button><br><br>
+            <a style="font-family: segoe ui; font-size: 12px; color:white; text-decoration: unset;" href="#">Privacy & policy</a><br><br><br><br><br><br>
+            <a style="font-family: segoe ui; font-size: 12px; color:white;">Already a member ?</a>
+            <a onclick="load_login()" style="font-family: segoe ui; font-size: 12px;cursor: pointer; color:white;outline: none;"><u>Login</u></a>
+        </div>
+    </div>
+    <div id="login_page" class="login_page" hidden>
+        <div align="center"><br><br><br>
+            <a class="login_title">Account Login</a><br><br><br>
+            <input class="login_value" id="login_email" placeholder="Username" type="text"/><br><br><br>
+            <input class="login_value" id="login_password" placeholder="Password" type="password" /><br><br><br>
+            <button class="login_button" id="login_button">Login</button><br><br>
+            <a style="font-family: segoe ui; font-size: 12px; color:white; text-decoration: unset;" href="#">forgot password ?</a><br><br><br><br><br><br>
+            <a style="font-family: segoe ui; font-size: 12px; color:white;">Not a member ?</a>
+            <a onclick="signup()" style="font-family: segoe ui; font-size: 12px;cursor: pointer;  color:white;outline: none;"><u>Sign Up</u></a>
+        </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <br><br><br>
+        <a id="sidenav1a" href="#">Share your story</a>
+        <a id="sidenav1a" href="#">Plan a Trip</a>
+        <a id="sidenav3a" href="#">About Us</a>
+        <a id="sidenav2a" href="#">Services</a><br><br><br><br><br>
+        <div align="center" class="lowend">
+            <a id="links_" href='https://www.facebook.com'><img src="./icons/facebook.png" id="facebook"></a>
+            <a id="links_" href='https://www.twitter.com'><img src="./icons/twitter.png" id="twitter"></a>
+            <a id="links_" href='https://www.instagram.com'><img src="./icons/instagram.png" id="instagram"></a>
+            <a id="links_" href='https://www.youtube.com'><img src="./icons/youtube.png" id="youtube"></a>
+        </div><br><br>
+        <span class="lowend_footer">explorer_community@any.com</span>
+    </div>
+</body>
+</html>
